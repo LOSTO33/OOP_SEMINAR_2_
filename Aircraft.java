@@ -23,7 +23,7 @@ public class Aircraft extends Vehicle implements Flyable{
     }
 
     @Override
-    void displayInfo(String model, String brand, int yer, int id) {
+    public void displayInfo() {
 
     }
 

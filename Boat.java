@@ -33,7 +33,7 @@ public class Boat extends Vehicle implements Swimmble{
     }
 
     @Override
-    void displayInfo(String model, String brand, int yer, int id) {
+     public void displayInfo() {
 
     }
 }

@@ -1,8 +1,10 @@
 public abstract class Vehicle {
-    int id;
-    String brand;
-    String Model;
-    int yer;
+    protected int id;
+    protected String brand;
+    protected String Model;
+     protected int yer;
+    protected int maxFuel;
+
 
     public int getId() {
         return id;
@@ -40,7 +42,8 @@ public abstract class Vehicle {
     public  abstract void stopEngine();
     public  abstract void accelerate(int speed);
     public abstract void brake();
-    abstract void displayInfo(String model,String brand,int yer,int id);
-//    System.out.println("Модель транспортного средства:  "+ getModel()+ "\nБренд Транспортного средства: "+ getBrand()+"Yer: "+getYer()+"ID: "+getID());
+    public void displayInfo(){
+        System.out.println("Модель транспортного средства:  "+ getModel()+ "\nБренд Транспортного средства: "+ getBrand()+"Yer: "+getYer()+"ID: "+ getId());
+    }
 
 }

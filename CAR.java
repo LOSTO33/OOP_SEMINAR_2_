@@ -15,21 +15,17 @@ public class CAR extends Vehicle{
     }
 
     @Override
-    public void accelerate(int speed)
+    public void accelerate(int speed){
+
+    }
     @Override
     public void brake() {
 
     }
 
+
     public void refuel(int liters) {
-        if (currentFuelLevel<=fuelCapacity){
-            currentFuelLevel+liters;
+        currentFuelLevel+=liters;
         }
-        return;
     }
 
-    @Override
-    void displayInfo(String model, String brand, int yer, int id) {
-
-    }
-}
