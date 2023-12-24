@@ -33,6 +33,7 @@ public class Car extends Vehicle{
     }
     @Override
     public void brake() {
+
         System.out.println("Машина остановлена");
     }
 

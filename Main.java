@@ -27,5 +27,24 @@ public class Main {
         mers.brake();
         mers.stopEngine();
         mers.refuel(5);
+        System.err.println();
+        Boat kater = new Boat(1,"Super","XL",2023);
+        kater.displayInfo();
+        kater.startEngine();
+        kater.accelerate(30);
+        kater.brake();
+        kater.stopEngine();
+        kater.startSwimming();
+        kater.stopSwimming();
+        System.err.println();
+        Aircraft boing = new Aircraft(1, "Super", "XL", 2023, 1000);
+        boing.displayInfo();
+        boing.startEngine();
+        boing.accelerate(70);
+        boing.brake();
+        boing.stopEngine();
+        boing.takeOff();
+        boing.land();
     }
 }
+
